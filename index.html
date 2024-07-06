@@ -1,0 +1,987 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint Nation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/base.min.css">
+    <link rel="stylesheet" href="./css/xts-theme_settings_default-1718453016.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- only add this styles -->
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+  
+    <section class="pricing pt-4">
+        <div class="container-fluid paading-area">
+            <div class="title-wrapper mb-lg-5 mb-4">
+                <h1 class="mb-2 text-center text-md-start">Pricing Calculator </h1>
+                <p class="text-center text-md-start mb-0">View print costs, distribution eligibility, potential revenue, and download custom design templates.</p>
+            </div>
+
+            <div id="bookCarousel" class="owl-carousel owl-theme">
+                <div class="item">
+                    <label class="book-label" for="flexRadioDefault1">
+                        <input class="book-label-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <div class="content">
+                            <div class="img-wrapper mb-1">
+                                <img class="img-fluid book-image" src="./images/print-book.png">
+                            </div>
+                            <p class="text-center book-title text-dark">Print Book</p>
+                        </div>
+                    </label>
+                </div>
+                <div class="item">
+                    <label class="book-label" for="flexRadioDefault2">
+                        <input class="book-label-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <div class="content">
+                            <div class="img-wrapper mb-1">
+                                <img class="img-fluid book-image" src="./images/children-book.png">
+                            </div>
+                            <p class="text-center book-title text-dark">Children Book</p>
+                        </div>
+                    </label>
+             
+                </div>
+                <div class="item">
+                    <label class="book-label" for="flexRadioDefault3">
+                        <input class="book-label-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <div class="content">
+                            <div class="img-wrapper mb-1">
+                                <img class="img-fluid book-image" src="./images/comic-book.png">
+                            </div>
+                            <p class="text-center book-title text-dark">Comic Book</p>
+                        </div>
+                    </label>
+             
+                </div>
+                <div class="item">
+                    <label class="book-label" for="flexRadioDefault4">
+                        <input class="book-label-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                        <div class="content">
+                            <div class="img-wrapper mb-1">
+                                <img class="img-fluid book-image" src="./images/magazine.png">
+                            </div>
+                            <p class="text-center book-title text-dark">Magazine</p>
+                        </div>
+                    </label>
+    
+                </div>
+                <div class="item">
+                    <label class="book-label" for="flexRadioDefault5">
+                        <input class="book-label-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                        <div class="content">
+                            <div class="img-wrapper mb-1">
+                                <img class="img-fluid book-image" src="./images/year-book.png">
+                            </div>
+                            <p class="text-center book-title text-dark">Year Book</p>
+                        </div>
+                    </label>
+               
+                </div>
+                <div class="item">
+                    <label class="book-label" for="flexRadioDefault6">
+                        <input class="book-label-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                        <div class="content">
+                            <div class="img-wrapper mb-1">
+                                <img class="img-fluid book-image" src="./images/art-book.png">
+                            </div>
+                            <p class="text-center book-title text-dark">Art Book</p>
+                        </div>
+                    </label>
+             
+                </div>
+            </div>
+
+            <div class="row gy-4 gx-xxl-5 gx-lg-3 gx-0">
+                <div class="col-lg-8">
+                    <h2 class="fs-2">Photo Book</h2>
+                    <div class="divider"></div>
+                    <div class="mb-4">
+                        <p class="fs-4 text-dark fw-600">Book Size & Page Count</p>
+                        <div class="row gy-3">
+                            <div class="col-sm-7">
+                                <div>
+                                    <select name="bookSize">
+                                        <option selected>Select Book Size</option>
+                                        <option value="Pocket Book">Pocket Book</option>
+                                        <option value="size2">size2</option>
+                                        <option value="size3">size3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="mb-3">
+                                    <input type="number" class="form-control text-start px-3" name="pageCount" placeholder="Page Count">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="fs-4 text-dark fw-600">Binding Type</p>
+                        <p class="fs-5 text-dark fw-600">Paperback Options</p>
+                        <div class="row mb-4 gy-3 gx-2 gx-md-2 gx-xl-3 gx-xxl-4">
+                            <div class="col-6 col-md-4">
+                                <label class="binding-type-label" for="bindingType1">
+                                    <input class="binding-type-input rounded-check" type="checkbox" checked name="flexRadioDefault" id="bindingType1">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/perfect-bound.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0 fs-6">Art Book</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <label class="binding-type-label" for="bindingType2">
+                                    <input class="binding-type-input rounded-check" type="checkbox" checked name="flexRadioDefault" id="bindingType2">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/coil-bond.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0">Coil Bound</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <label class="binding-type-label" for="bindingType3">
+                                    <input class="binding-type-input rounded-check" type="checkbox" checked name="flexRadioDefault" id="bindingType3">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/saddle-stitch.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0 fs-6">Saddle Stitch</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <p class="fs-5 text-dark fw-600">Hardcover Options</p>
+                        <div class="row mb-5 gy-3 gx-2 gx-md-2 gx-xl-3 gx-xxl-4">
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="hardCoverOptions1">
+                                    <input class="binding-type-input rounded-check hardCoverOption" value="Case Wrap" type="checkbox" checked name="hardCoverOptions" id="hardCoverOptions1">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/case-wrap.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0 fs-6">Case Wrap</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="hardCoverOptions2">
+                                    <input class="binding-type-input rounded-check hardCoverOption" value="Linen Wrap with Dust Jacket" type="checkbox" checked name="hardCoverOptions" id="hardCoverOptions2">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/linen-wrap.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0 lh-1"><span class="fs-6">Linen Wrap</span><br>with Dust Jacket</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="hardCoverOptions3">
+                                    <input class="binding-type-input rounded-check hardCoverOption" value="Case Wrap with Dust Jacket" type="checkbox" name="hardCoverOptions" id="hardCoverOptions3">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/case-wrap-dust.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0 lh-1"><span class="fs-6">Case Wrap</span><br>with Dust Jacket</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                         
+                        </div>
+
+                        <div id="headbandOptionWrapper">
+                            <p class="fs-5 text-dark fw-600">Headbands Options</p>
+                            <div class="checkbox-two mb-3">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="headbandOption" checked="" value="Headbands" id="headbandOptionWith" autocompleted="">
+                                        <label for="headbandOptionWith">With Headbands</label>
+                                    </div>
+                                </div>
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="headbandOption" value="No Headbands" id="headbandOptionWithOut" autocompleted="">
+                                        <label for="headbandOptionWithOut">Without Headbands</label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div id="headbandOptionStyle">
+                                <div class="row gy-2 gx-2 gy-lg-3 gx-lg-1 gx-xxl-2 mb-5">
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband1" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband1">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">White</p>
+                                                <img src="./images/white-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband2" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband2">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Gold</p>
+                                                <img src="./images/gold-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband3" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband3">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Red/ White</p>
+                                                <img src="./images/redwhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband4" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband4">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Red/ Gold</p>
+                                                <img src="./images/redgold-1-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband5" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband5">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">White</p>
+                                                <img src="./images/white2-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+        
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband6" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband6">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Dark Gray</p>
+                                                <img src="./images/darkgray-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband7" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband7">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Green</p>
+                                                <img src="./images/green-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband8" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband8">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Red/ Navy</p>
+                                                <img src="./images/rednavy-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband9" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband9">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Teal/ White</p>
+                                                <img src="./images/tealwhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband10" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband10">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Royal/ White</p>
+                                                <img src="./images/royalwhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband11" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband11">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Navy/ White</p>
+                                                <img src="./images/navywhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband12" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband12">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Garnet/ Gold</p>
+                                                <img src="./images/garnetgold-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband13" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband13">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Purple/ White</p>
+                                                <img src="./images/purplewhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband14" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband14">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Red/ Gold</p>
+                                                <img src="./images/redgold-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband15" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband15">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Brown/ Gold</p>
+                                                <img src="./images/browngold-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband16" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband16">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Dark Garnet</p>
+                                                <img src="./images/darkgarnet-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband17" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband17">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Tan</p>
+                                                <img src="./images/tan-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband18" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband18">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Gold/ White</p>
+                                                <img src="./images/goldwhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband19" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband19">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Brown/ White</p>
+                                                <img src="./images/brownwhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband20" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband20">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Black/ White</p>
+                                                <img src="./images/blackwhite-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband21" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband21">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Lemon Yellow</p>
+                                                <img src="./images/lemon-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband22" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband22">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Purple</p>
+                                                <img src="./images/purple-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband23" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband23">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Navy/ Gold</p>
+                                                <img src="./images/navygold-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="col-6 col-md-3 col-xl-3 col-xxl-2 col-lg-3">
+                                        <label for="headband24" class="custom-check-band-label h-100">
+                                            <input type="radio" name="headband-style" class="custom-check-band-input" id="headband24">
+                                            <div class="content">
+                                                <p class="mb-0 me-3 lh-sm">Brown/ White</p>
+                                                <img src="./images/brownwhite-2-head-band.png" alt="">
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+             
+                    
+
+                        <p class="fs-5 text-dark fw-600">Interior Page Printing</p>
+                        <div class="row mb-5 gy-3 gx-2 gx-md-2 gx-xl-3 gx-xxl-4">
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="interiorPage1">
+                                    <input class="binding-type-input rounded-check" value="Standard Black & White" type="radio" name="interiorPage" id="interiorPage1">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/interior-black-white.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark lh-sm mb-0 fs-6">Standard Black & White</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="interiorPage2">
+                                    <input class="binding-type-input rounded-check" value="Premium Black & White" type="radio" checked name="interiorPage" id="interiorPage2">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/interior-premium-black-white.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark lh-sm mb-0">Premium Black & White</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="interiorPage3">
+                                    <input class="binding-type-input rounded-check" value="Standard Color" type="radio" name="interiorPage" id="interiorPage3">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/interior-standard-color.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark lh-sm mb-0 fs-6">Standard Color</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="interiorPage4">
+                                    <input class="binding-type-input rounded-check" value="Premium Color" type="radio" name="interiorPage" id="interiorPage4">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/interior-premium-color.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark lh-sm mb-0 fs-6">Premium Color</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <p class="fs-5 text-dark fw-600">Paper Type</p>
+                        <div class="row mb-5 gy-3 gx-0 gx-md-2 gx-xl-3 gx-xxl-4">
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType1">
+                                    <input class="binding-type-input rounded-check" value="80# White Coated" type="radio" checked name="paperType" id="paperType1">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">80# White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType2">
+                                    <input class="binding-type-input rounded-check" value="81# White Coated" type="radio" name="paperType" id="paperType2">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">81# White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType3">
+                                    <input class="binding-type-input rounded-check" value="82# White Coated" type="radio" name="paperType" id="paperType3">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">82 # White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType4">
+                                    <input class="binding-type-input rounded-check" value="83# White Coated" type="radio" name="paperType" id="paperType4">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">83# White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType5">
+                                    <input class="binding-type-input rounded-check" value="84# White Coated" type="radio" name="paperType" id="paperType5">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">84# White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType6">
+                                    <input class="binding-type-input rounded-check" value="85# White Coated" type="radio" name="paperType" id="paperType6">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">85# White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="col-md-6 col-xl-4">
+                                <label class="binding-type-label" for="paperType7">
+                                    <input class="binding-type-input rounded-check" value="86# White Coated" type="radio" name="paperType" id="paperType7">
+                                    <div class="content p-3">
+                                        <div class="rounded-check mb-3"></div>
+                                        <p class="mb-3 fs-6 fw-600">86# White Coated</p>
+                                        <p class="mb-0">Duis aute irure dolor in reprehe nderit in vol uptate velit esse cillum dolore eu fugiat nulla pariatur xcepteur sint occaecat cupidatat non proident.</p>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+
+
+                        <p class="fs-5 text-dark fw-600">Cover Finish</p>
+                        <div class="row mb-5 gy-3 gx-2 gx-md-2 gx-xl-3 gx-xxl-4">
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="inputCoverFinish1">
+                                    <input class="binding-type-input rounded-check" type="radio" value="Glossy" checked name="inputCover" id="inputCoverFinish1">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/glossy-cover-finish.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0 fs-6">Glossy</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-md-4 col-6">
+                                <label class="binding-type-label" for="inputCoverFinish2">
+                                    <input class="binding-type-input rounded-check" type="radio" value="Matte" name="inputCover" id="inputCoverFinish2">
+                                    <div class="content">
+                                        <div class="">
+                                            <img class="img-fluid book-image w-100" src="./images/matte-cover-finish.png">
+                                        </div>
+                                        <div class="input-wrapper d-flex align-items-center">
+                                            <div class="rounded-check"></div>
+                                            <p class="binding-title text-dark mb-0">Matte</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <p class="fs-5 text-dark fw-600">Quantity & Shipping Estimates</p>
+                        <div class="quantity-shipping">
+                            <p class="text-dark fs-18 mb-5">Plan your order, estimate shipping costs, and see available bulk discounts.</p>
+                            <p class="text-dark fs-18 mb-4 fw-600">BULK DISCOUNT RANGES</p>
+                            <div class="choose-sixe-box choose-quantity-sec plans mb-4">
+                                <div class="quantity-box">
+                                    <div class="quantity-header">
+                                        <ul>
+                                            <li>Book Quantity</li>
+                                            <li>% Off</li>
+                                            <li>Price Per Book</li>
+                                        </ul>
+                                    </div>
+                                    <div class="quantity-content cust_quan_price">
+                                        <ul id="price-list">
+                                            <li class="price_details">
+                                               <div class="quantity-slct-box">
+                                                  <label class="plan basic-plan" for="quantity1">
+                                                     <input type="radio" name="quantity" id="quantity1" value="27.55">
+                                                     <div class="plan-content quantity-slct-box-content">
+                                                        <div class="plan-details">
+                                                           <p>100-499</p>
+                                                           <p>5% OFF</p>
+                                                           <p>27.55 USD</p>
+                                                        </div>
+                                                     </div>
+                                                  </label>
+                                               </div>
+                                            </li>
+                                            <li class="price_details active_price">
+                                               <div class="quantity-slct-box">
+                                                  <label class="plan basic-plan" for="quantity2">
+                                                     <input type="radio" name="quantity" id="quantity2" checked value="26.10">
+                                                     <div class="plan-content quantity-slct-box-content">
+                                                        <div class="plan-details">
+                                                            <p>100-499</p>
+                                                            <p>10% OFF</p>
+                                                            <p>26.10 USD</p>
+                                                        </div>
+                                                     </div>
+                                                  </label>
+                                               </div>
+                                            </li>
+                                            <li class="price_details">
+                                               <div class="quantity-slct-box">
+                                                  <label class="plan basic-plan" for="quantity3">
+                                                     <input type="radio" name="quantity" id="quantity3" value="24.65">
+                                                     <div class="plan-content quantity-slct-box-content">
+                                                        <div class="plan-details">
+                                                            <p>1000+</p>
+                                                            <p>15% OFF</p>
+                                                            <p>24.65 USD</p>
+                                                        </div>
+                                                     </div>
+                                                  </label>
+                                               </div>
+                                            </li>
+                                            
+                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-dark fs-18 mb-3 fw-600">Number of Copies</p>
+                            <div class="row mb-4">
+                                <div class="col-lg-5">
+                                    <div class="mb-3 bg-white">
+                                        <input type="number" class="form-control text-start px-3" name="numberOfCopies" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-dark fs-18 mb-3 fw-600">Do You Need Text Formatting ($100)</p>
+                            <div class="mb-3">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="formatting" checked="" value="formating_yes" id="formating_yes" autocompleted="">
+                                        <label for="formating_yes">I need text formattings</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="formatting" value="formating_no" id="formating_no" autocompleted="">
+                                        <label for="formating_no">I don’t need text formatting</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="text-dark fs-18 mb-3 fw-600">Do you need Professional cover design? ($100)</p>
+                            <div class="mb-3">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="professional_cover" checked="" value="professionanl_cover_yes" id="professionanl_cover_yes" autocompleted="">
+                                        <label for="professionanl_cover_yes">Yes</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="professional_cover" value="professionanl_cover_no" id="professionanl_cover_no" autocompleted="">
+                                        <label for="professionanl_cover_no">No</label>
+                                    </div>
+                                </div>
+                            </div>
+                       
+
+                            <p class="text-dark fs-18 mb-3 fw-600">Do you need an ISBN? ($100)</p>
+                            <div class="mb-3">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="need_isbn" checked="" value="need_isbn" id="need_isbn" autocompleted="">
+                                        <label for="need_isbn">I need to purchase an ISBN number ($49)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="need_isbn" value="already_have_isbn" id="already_have_isbn" autocompleted="">
+                                        <label for="already_have_isbn">I already have an ISBN for my book</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="cus-checkbox">
+                                    <div class="form-group">
+                                        <input type="radio" name="need_isbn" value="dont_need_isbn" id="dont_need_isbn" autocompleted="">
+                                        <label for="dont_need_isbn">I don&lsquo;t need an ISBN number</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+                            
+                            <div class="d-flex justify-content-between text-dark">
+                                <p>Book Subtotal</p>
+                                <p class="flex-shrink-0">25.05 USD</p>
+                            </div>
+                            <div class="d-flex justify-content-between text-dark">
+                                <p>Shipping & Handling</p>
+                                <p class="flex-shrink-0">———</p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-5 text-dark">
+                                <p><strong>Subtotal</strong> (Excluding tax and applicable fees) </p>
+                                <p class="fw-bold flex-shrink-0">25.05 USD</p>
+                            </div>
+
+                            <a href="#" class="cta-button w-100">Checkout Now <img src="./images/checkout-icon.png" class="ms-2" alt="download"> </a>
+               
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="side-details px-3 py-4 sticky-top">
+                        <p class="text-uppercase text-center fw-600 text-dark fs-18 mb-4">Order Details</p>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                  <tr>
+                                    <td class="w-50">
+                                        <p class="mb-0 text-uppercase mb-1">Book Size</p>
+                                        <p class="mb-0 val fw-600" id="bookSizeRender">-</p>
+                                    </td>
+                                    <td class="w-50">
+                                        <p class="mb-0 text-uppercase mb-1">Page Count</p>
+                                        <p class="mb-0 val fw-600" id="pageCountRender">-</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <p class="mb-0 text-uppercase mb-1">BINDING TYPE</p>
+                                        <p class="mb-0 val fw-600">Hardcover Case Wrap</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0 text-uppercase mb-1">Paperback Options</p>
+                                        <p class="mb-0 val fw-600">Perfect Bound</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <p class="mb-0 text-uppercase mb-1">Headbands Options</p>
+                                        <p class="mb-0 val fw-600" id="headbandOptionRender">Headbands</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0 text-uppercase mb-1">Interior Page Printing</p>
+                                        <p class="mb-0 val fw-600" id="interiorPagRender">Premium Color</p>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                        <p class="mb-0 text-uppercase mb-1">PAPER TYPE</p>
+                                        <p class="mb-0 val fw-600" id="paperTypeRender">80# White—Coated</p>
+                                    </td>
+                                    <td>
+                                        <p class="mb-0 text-uppercase mb-1">COVER FINISH</p>
+                                        <p class="mb-0 val fw-600" id="inputCoverRender">Glossy</p>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+
+                        <a href="#" class="secondary-button w-100 mb-2"><img src="./images/download-logo.png" class="me-1" alt="download"> Book Templates</a>
+                        <a href="#" class="secondary-button w-100 mb-4"><img src="./images/download-logo.png" class="me-1" alt="download"> Custom Cover Template</a>
+
+                        <div class="text-center mb-4">
+                            <p class="mb-0 text-dark fs-3 fw-500 lh-1">25.05 USD </p>
+                            <p class="mb-0 fw-500 text-dark">per Photo Book</p>
+                        </div>
+
+                        <a href="#" class="cta-button w-100">Checkout Now <img src="./images/checkout-icon.png" class="ms-2" alt="download"> </a>
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js" id="bootstrap.bundle.min-js"></script>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/owl.carousel.min.js"></script>
+
+    <script>
+        var bookCarousel = jQuery("#bookCarousel");
+        bookCarousel.owlCarousel({
+            items: 6,
+            dots: false,
+            nav: true,
+            margin: 14,
+            autoplay: false,
+            navText: ['<img src="https://printnation.com/wp-content/plugins/printnation/assets/images/icon/right-arrow.png">', '<img src="https://printnation.com/wp-content/plugins/printnation/assets/images/icon/left-arrow.png">'],
+            responsive: {
+                0:{
+                    items: 2,
+                },
+                480:{
+                    items: 3,
+                },
+                769:{
+                    items: 4
+                },
+                1000:{
+                    items: 5
+                },
+                1200:{
+                    items: 6
+                }
+            }
+	    });
+
+        var headbandOptionStyles = document.getElementById("headbandOptionStyle");
+        const headbandOptionRender = document.querySelector("#headbandOptionRender");
+
+
+        function headbandOptionOnChange(event) {
+
+            if(event.target.value === "Headbands"){
+                headbandOptionStyles.classList.remove("d-none")
+            }else{
+                headbandOptionStyles.classList.add("d-none")
+            }
+            headbandOptionRender.textContent = event.target.value;
+        }
+
+
+        document.querySelectorAll("input[name='headbandOption']").forEach((input) => {
+            input.addEventListener('change', headbandOptionOnChange);
+        });
+
+
+        var headbandOptionWrapper = document.getElementById("headbandOptionWrapper");
+
+        function hardCoverOptionOnChange(event) {
+            hardCoverOptionSelected = [];
+
+            document.querySelectorAll(".hardCoverOption:checked").forEach((input) => {
+                hardCoverOptionSelected.push(input.value);
+            });
+            
+            if (hardCoverOptionSelected === undefined || hardCoverOptionSelected.length == 0) {
+                headbandOptionWrapper.classList.add("d-none")
+            }else{
+                headbandOptionWrapper.classList.remove("d-none")
+            }
+        }
+        document.querySelectorAll(".hardCoverOption").forEach((input) => {
+            input.addEventListener('change', hardCoverOptionOnChange);
+        });
+
+        const bookSize = document.querySelector("select[name='bookSize']");
+        const bookSizeRender = document.querySelector("#bookSizeRender");
+
+        bookSize.addEventListener("change", (event) => {
+            bookSizeRender.textContent =  event.target.value;
+        });
+
+
+        const pageCount = document.querySelector("input[name='pageCount']");
+        const pageCountRender = document.querySelector("#pageCountRender");
+
+        pageCount.addEventListener("keyup", (event) => {
+            if(event.target.value !== ''){
+                pageCountRender.textContent =  event.target.value;
+            }else{
+                pageCountRender.textContent =  '-';
+            }
+           
+        });
+
+        
+        const interiorPagRender = document.querySelector("#interiorPagRender");
+
+        function interiorPageOnChange(event) {
+            interiorPagRender.textContent = event.target.value;
+        }
+
+        document.querySelectorAll("input[name='interiorPage']").forEach((input) => {
+            input.addEventListener('change', interiorPageOnChange);
+        });
+
+
+        const paperTypeRender = document.querySelector("#paperTypeRender");
+
+        function paperTypeOnChange(event) {
+            paperTypeRender.textContent = event.target.value;
+        }
+
+        document.querySelectorAll("input[name='paperType']").forEach((input) => {
+            input.addEventListener('change', paperTypeOnChange);
+        });
+
+        const inputCoverRender = document.querySelector("#inputCoverRender");
+
+        function inputCoverOnChange(event) {
+            inputCoverRender.textContent = event.target.value;
+        }
+
+        document.querySelectorAll("input[name='inputCover']").forEach((input) => {
+            input.addEventListener('change', inputCoverOnChange);
+        });
+
+
+    </script>
+    <footer>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,240 @@
+
+@media only screen and (max-width:1133px){
+
+    .box-icon-align-left .box-icon-wrapper {
+        margin-right: 0px !important;
+        max-width: 46% !important;
+    }
+    .info-box-icon img {
+        width: 39px !important;
+    }
+    .headerphone h4 {
+        margin: 9px 0 0 !important;
+        font-size: 13px !important;
+    }
+    .whb-space-element{
+        width:auto !important;
+    }
+    [class*="wd-header-search-form"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .wd-logo img[width]:not([src$=".svg"]) {
+        width: 164px !important;
+    }
+    }
+
+@media only screen and (max-width:1024px){
+
+    .navigation-div .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.6rem;
+        padding-left: 1.6rem;
+        font-size: 16px;
+    }
+    .header-sec-div .logo {
+        width: 30%;
+    }
+    .mobile-menu {
+        display: none;
+    }
+    .header-sec-div .header-middle {
+        width: 35%;
+    }
+    .header-sec-div .header-left {
+        width: 35%;
+    }
+    /* 30-8-23 */
+.whb-mobile-left span.wd-tools-text {
+    display: none;
+}
+
+}
+
+
+
+@media only screen and (max-width:991px){
+    .header-sec-div {
+        margin-top: 9px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .header-sec-div .header-middle {
+        width: 100%;
+        order: 2;
+    }
+    .header-sec-div .header-left {
+        display: flex;
+        width: 100%;
+        order: 1;
+        padding-left: 0;
+    }
+    .header-sec-div .logo {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .header-sec-div .header-left img {
+        width: 22px;
+        margin-right: 19px;
+    }
+    .paading-area {
+        padding: 0 20px;
+    }
+
+    .brochure-form-area .instant-price-quoter-side {
+        width: 100%;
+    }
+    .brochure-form-area .brochure-side {
+        width: 100%;
+    }
+    .brochure-form-area {
+        flex-direction: column;
+    }
+    .owl-theme .owl-nav {
+        display: none;
+    }
+    section.faq {
+        padding: 41px 0;
+    }
+    .sec-title h4 {
+        font-size: 25px;
+        
+    }
+    section.faq {
+        padding: 0 0 33px;
+    }
+    .view-all a:after {
+        bottom: -22px;
+        
+    }
+    section.order {
+        padding: 11px 0 56px;
+    } 
+    .blog-fancy-box {
+        margin-bottom: 25px;
+    }  
+    .view-all {
+        margin-top: 50px;
+    } 
+    section.blog {
+        padding: 16px 0;
+    }
+    .blog-tabs .nav-pills .nav-link.active:before {
+        background-size: 14px;
+        background-repeat: no-repeat;
+        left: 9px;
+        top: 14px;
+        width: 14px;
+    }
+    .blog-tabs .nav-link {
+        padding: 11px 30px;
+        font-size: 12px;
+       
+    }
+    footer .footer-row {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    footer .foot-widget {
+        width: 23%;
+    }
+   
+    .foot-widget.newsletter {
+        width: 100%;
+    }
+    .foot-widget.newsletter {
+        width: 100%;
+    }
+    .foot-widget.newsletter {
+    width: 100%;
+}
+footer {
+    padding: 13px 0 38px;
+    
+}
+.foot-widget.newsletter img.footer-logo {
+    margin-top: 19px;
+    width: 100%;
+}
+.testimonial-image img {
+    width: 100%;
+}
+.mobile-menu button{
+    position: absolute;
+    top: -45px;
+    right: 0;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.desk {
+    display: none;
+}
+.mobile-menu {
+    display: block;
+}
+/*4-7-23*/
+    
+#sync1.owl-theme {
+    height: auto;
+}
+.breadcrumb-div.cust-breadcrumb {
+    padding: 0 35px;
+    
+}
+.blog-contents {
+    height: 214px;
+}
+.faq .accordion-button {
+    font-size: 16px;
+    line-height: 30px;
+}
+    
+/*4-7-23*/
+/* 30-8-23 */
+.whb-mobile-left span.wd-tools-text {
+    display: none;
+}
+.whb-general-header {
+    padding: 0 0;
+}
+/* 31-8-23 */
+.instant-price-quoter-side {
+    margin-top: 15px;
+}
+section.testimonial {
+    padding: 14px 0;
+}
+.wd-logo img[width]:not([src$=".svg"]) {
+    width: 385px !important;
+}
+}
+
+
+@media only screen and (max-width:767px){
+footer .foot-widget {
+    width: 47%;
+}
+section.related-products {
+    padding: 22px 0 0;
+}
+.instant-price-quoter-side form .row {
+    margin-bottom: 1px;
+}
+.instant-price-quoter-side .form-group.ps-0 {
+    padding-left: 13px!important;
+}
+.whb-mobile-left span.wd-tools-text {
+    display: none;
+}
+.whb-mobile-left .wd-tools-element .wd-tools-icon:before {
+    font-size: 25px;
+}
+section.testimonial {
+    padding: 22px 0;
+}
+.whb-general-header {
+    padding: 0 0;
+}
+}
+
+
+@media only screen and (max-width:479px){
+    .cust-popuptext{right: 0;}
+}
